@@ -1,0 +1,13 @@
+version: '2'
+services:
+  kaggle-plant-seedling-classification:
+    image: kaggle-plant-seedling-classification:dev
+    container_name: kaggle-plant-seedling-classification
+    volumes:
+      - /home/wu/projects/kaggle-plant-seedlings-classification:/kaggle-plant-seedling-classification
+      - /home/wu/projects/kaggle_data/plant-seedlings-classification/:/kaggle_data/
+    command: 
+      - /bin/bash
+      - -c
+      - sleep infinity
+
