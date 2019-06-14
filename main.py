@@ -1,6 +1,6 @@
 import os
 import logging
-import kaggle-plant-seedlings-classification.training
+import training
 
 def main():
     training()

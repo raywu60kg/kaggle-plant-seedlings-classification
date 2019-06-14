@@ -4,9 +4,9 @@ services:
     image: kaggle-plant-seedling-classification:dev
     container_name: kaggle-plant-seedlings-classification
     volumes:
-      - /home/wu/projects/kaggle-plant-seedlings-classification:/kaggle-plant-seedling-classification
-      - /home/wu/projects/kaggle_data/plant-seedlings-classification/:/kaggle_data/
-      - /home/wu/projects/pre-trained_models/:/pre-trained_models/
+      - ~/projects/kaggle-plant-seedlings-classification:/kaggle-plant-seedling-classification
+      - ~/projects/kaggle_data/plant-seedlings-classification/:/kaggle_data/
+      - ~/projects/pre-trained_models/:/pre-trained_models/
     command: 
       - /bin/bash
       - -c

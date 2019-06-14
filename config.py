@@ -1,11 +1,7 @@
 IMAGE_PATH = '/kaggle_data'
+TFRECORD_PATH = '/kaggle_data/tfrecords'
 BATCH_SIZE = 12
 VALID_RATIO = 0.2
 TRAIN_RATIO = 0.8
 NUM_CORES = 8
 IMAGE_SIZE = 128
-
-
-
-
-
