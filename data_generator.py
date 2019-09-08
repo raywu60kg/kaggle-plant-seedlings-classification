@@ -25,7 +25,7 @@ class InputPipeline():
             target_size=(self.image_size, self.image_size),
             batch_size=self.batch_size,
             class_mode='categorical')
-    
+
 
     def buildValidData(self):
         valid_datagen = ImageDataGenerator(rescale=1./255)
@@ -35,7 +35,7 @@ class InputPipeline():
             batch_size=self.batch_size,
             class_mode='categorical')
 
-    
+
     def buildTestData(self):
         test_datagen = ImageDataGenerator(rescale=1./255)
         self.test_generator = test_datagen.flow_from_directory(
@@ -43,4 +43,4 @@ class InputPipeline():
             target_size=(self.image_size, self.image_size),
             batch_size=self.batch_size,
             class_mode='categorical')
-        
+

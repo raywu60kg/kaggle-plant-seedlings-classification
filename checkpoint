@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/apple/Documents/git-repos/kaggle-plant-seedlings-classification/plantclassfication-0.001-2conv-basic.model"
+all_model_checkpoint_paths: "/Users/apple/Documents/git-repos/kaggle-plant-seedlings-classification/plantclassfication-0.001-2conv-basic.model"

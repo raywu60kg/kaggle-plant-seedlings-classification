@@ -9,6 +9,8 @@ verify_ssl = true
 tensorflow = "==1.12.0"
 nni = "==0.7.1"
 kaggle = "*"
+ipykernel = "*"
+jupyter = "*"
 
 [requires]
 python_version = "3.6"

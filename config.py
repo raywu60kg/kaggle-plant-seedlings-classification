@@ -1,12 +1,12 @@
 import tensorflow as tf
 
 
-# Pathes
-IMAGE_PATH = '/kaggle_data'
-TFRECORD_PATH = '/kaggle_data/tfrecords/'
-TRAIN_DATA_PATH = '/kaggle_data/train_split/'
-VALID_DATA_PATH = '/kaggle_data/valid_split/'
-TEST_DATA_PATH = '/kaggle_data/test_split/'
+# Paths
+DATA_DIR = '/Users/apple/Documents/git-repos/data/kaggle_plant_data/'
+TFRECORD_PATH = DATA_DIR + 'tfrecords/'
+TRAIN_DATA_PATH = DATA_DIR + 'training/'
+VALID_DATA_PATH = DATA_DIR + 'validation/'
+TEST_DATA_PATH = DATA_DIR + 'testing/'
 
 # Data params
 BATCH_SIZE = 12
@@ -32,7 +32,7 @@ CATEGORIES_NAME = [
 CATEGORIES_NUM = len(CATEGORIES_NAME)
 
 path_params = tf.contrib.training.HParams(
-    image_path = IMAGE_PATH,
+    data_dir = DATA_DIR,
     tfrecord_path = TFRECORD_PATH,
     train_data_path = TRAIN_DATA_PATH,
     valid_data_path = VALID_DATA_PATH,
