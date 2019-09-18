@@ -1,8 +1,8 @@
 #trial: edit here
-import tensorfow as tf
+import tensorflow as tf
 import logging
 from config import path_params, model_params
-from tf.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 class InputPipeline():
