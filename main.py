@@ -1,6 +1,6 @@
 import os
 import logging
-import training
+from training import training
 
 def main():
     training()

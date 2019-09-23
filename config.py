@@ -1,5 +1,4 @@
-import tensorflow as tf
-
+from tensorflow.contrib.training import HParams
 
 # paths
 DATA_DIR = '/Users/apple/Documents/git-repos/data/kaggle_plant_data/'
@@ -9,7 +8,7 @@ VALID_DATA_PATH = DATA_DIR + 'validation/'
 TEST_DATA_PATH = DATA_DIR + 'testing/'
 
 # data params
-BATCH_SIZE = 12
+BATCH_SIZE = 6
 TRAIN_RATIO = 0.7
 VALID_RATIO = 0.15
 TEST_RATIO = 0.15
@@ -32,7 +31,7 @@ CATEGORIES_NAME = [
 
 CATEGORIES_NUM = len(CATEGORIES_NAME)
 
-path_params = tf.contrib.training.HParams(
+path_params = HParams(
     data_dir = DATA_DIR,
     tfrecord_path = TFRECORD_PATH,
     train_data_path = TRAIN_DATA_PATH,
@@ -40,7 +39,7 @@ path_params = tf.contrib.training.HParams(
     test_data_path = TEST_DATA_PATH
 )
 
-train_params = tf.contrib.training.HParams(
+train_params = HParams(
     batch_size = BATCH_SIZE,
     train_ratio = TRAIN_RATIO,
     valid_ratio = VALID_RATIO,
@@ -52,7 +51,7 @@ train_params = tf.contrib.training.HParams(
     epochs = 1
 )
 
-model_params = tf.contrib.training.HParams(
+model_params = HParams(
     image_size = train_params.image_size,
     learning_rate = 0.0001
 )

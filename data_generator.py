@@ -1,9 +1,4 @@
-#trial: edit here
-import tensorflow as tf
-import logging
-#from config import path_params, model_params
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
 
 class DataPipeline():
     def __init__(self, path_params, train_params):
@@ -49,9 +44,3 @@ class DataPipeline():
                 batch_size = self.batch_size, #1
                 class_mode = 'categorical',#None,#'categorical',
                 shuffle = False)
-
-
-#inp = InputPipeline(path_params, model_params)
-#tr = inp.buildTrainData()
-#tr.train_generator
-#print(1)
